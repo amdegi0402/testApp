@@ -1,20 +1,18 @@
-import Link from 'next/link';
-import style from '../static/Style';
-import Counter from '../component/Counter';
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import Game from './Game.js'
 
 
+        
+        
+const Main = () => (
 
 
-//main
-export default () =><div>
-    {style}
-    <h1>page_1</h1>
-    <p>Welocome!!</p>
-    <hr />
-    <Counter />
-    <div>
-        <Link href="/other">
-            <button>Go To OtherPage &gt;&gt;</button>
-        </Link>
-    </div>
-</div>
+        <Game />,
+        document.getElementById('root'),
+
+)
+export default Main     
+
+        
+
